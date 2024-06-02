@@ -137,6 +137,7 @@ nav {
   font-weight: 600;
   color: var(--white);
   line-height: 5rem;
+  width: 100%;
 }
 
 .h1__span-1 {
