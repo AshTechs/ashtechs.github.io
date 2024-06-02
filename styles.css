@@ -261,7 +261,7 @@ h2 {
   color: var(--tertiary-color);
 }
 
-@media (width > 768px) {
+@media (width < 768px) {
   nav {
     position: static;
     padding: 2rem 1rem;
