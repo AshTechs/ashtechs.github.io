@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- HEAD SECTION-->
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -8,27 +11,33 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styling.css"/>
     <title>HealthEase | Digital</title>
   </head>
+
+  <!-- BODY SECTION -->
+
   <body>
+
+    <!-- Navigation Bar -->
+    
     <nav>
-      <div class="nav__header">
         <div class="nav__logo">
-          <a href="#">
-            <img src="img/Logo.png" alt="logo"/>
-            <span>Digital</span>
-          </a>
+            <a href="#"><img src="img/Logo.png" alt="logo"/>
+            <span>Digital</span></a>
         </div>
-        <div class="nav__menu__btn" id="menu-btn">
-          <i class="ri-menu-line"></i>
+        <ul id="menuList">
+            <li><a class="nav__link" href="index.html">Home</a></li>
+            <li><a class="nav__link" href="#">Developers</a></li>
+            <li><a class="nav__link" href="#">Features</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
         </div>
-      </div>
-      <ul class="nav__links" id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Developer</a></li>
-        <li><a href="#">Features</a></li>
-      </ul>
     </nav>
+
+    <!-- Header -->
+
     <header class="header__container">
       <div class="header__image">
         <img src="img/Logo.png" alt="header" />
@@ -49,12 +58,18 @@
         </div>
       </div>
     </header>
+
+    <!-- Main -->
+
     <p2>
-      <div class="Clinical"><h2>Medical Consultation</h2></div>
-      <div class="Laboratory"><h2>Laboratory Services</h2></div>
-      <div class="Pharmaceutical"><h2>Pharmaceutical Services</h2></div>
-      <div class="Nursing"><h2>Nursing Services</h2></div>
+      <div class="Clinical"><h2>Medical<br/>Consultation</h2></div>
+      <div class="Laboratory"><h2>Laboratory<br/>Services</h2></div>
+      <div class="Pharmaceutical"><h2>Pharmaceutical<br/>Services</h2></div>
+      <div class="Nursing"><h2>Nursing<br/>Services</h2></div>
     </p2>
+
+    <!-- FOOTER SECTION -->
+
     <footer>
       <ul class="socials">
           <li>
@@ -70,11 +85,25 @@
             <a href="https://github.com/AshTechs/ashtechs.github.io" target="_blank"><i class="ri-github-fill"></i></a>
           </li>
         </ul>
-        <div class="header__bar">
+        <div class="footer__bar">
           Copyright © 2024 AshTechs | All rights reserved.
         </div>
     </footer>
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
     <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
   </body>
 </html>
