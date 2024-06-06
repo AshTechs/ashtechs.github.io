@@ -80,15 +80,6 @@
 }
 
 @media (max-width:600px) {
-	nav {
-		height: 40px;
-	}
-
-	.nav__logo a img {
-		width:80px;
-		margin-left: -25px
-	}
-
 	.content {
 		display: block;
 	}
