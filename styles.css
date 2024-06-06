@@ -339,6 +339,10 @@ nav ul li a:hover {
     justify-content: flex-start;
   }
 
+  .socials a {
+    margin-left: 40%
+  }
+
   h2 {
     font-size: 2rem;
   }
