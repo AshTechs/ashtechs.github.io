@@ -40,6 +40,9 @@ body {
 
 .header__container {
   max-width: var(--max-width);
+  margin-inline: auto;
+  padding-block: 5rem 2rem;
+  padding-inline: 1rem;
   display: grid;
   gap: 2rem;
 }
@@ -47,6 +50,7 @@ body {
 .header__image img {
   width: 100%;
   max-width: 500px;
+  margin-inline: auto;
   display: flex;
 }
 
@@ -124,6 +128,7 @@ p2 {
   background-image: url(img/Clin.jpg);
   background-size: cover;
   position: relative;
+  translate: translate(10px);
   transition: .9s;
   border-radius: 0 100px 100px 0px;
 }
@@ -199,6 +204,7 @@ h2 {
 }
 
 .socials {
+  padding-block: 1rem 3rem;
   display: flex;
   gap: 2rem;
   text-align: center;
@@ -318,6 +324,7 @@ nav ul li a:hover {
   .header__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    padding-block: 2rem;
   }
 
   .header__image {
@@ -366,6 +373,8 @@ nav ul li a:hover {
       font-size: 2rem;
     }
     .header__container {
+      padding-block: 1rem 0rem;
+      padding-inline: 1rem;
       gap: 2rem;
     }
     h2 {
