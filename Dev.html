@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD SECTION-->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="dev.css"/>
+    <link rel="stylesheet" href="styling.css"/>
+    <title>HealthEase | Digital</title>
+  </head>
+
+  <!-- BODY SECTION -->
+
+  <body>
+
+    <!-- Navigation Bar -->
+    
+    <nav>
+        <div class="nav__logo">
+            <a href="#"><img src="img/Logo.png" alt="logo"/>
+            <span>Digital</span></a>
+        </div>
+        <ul id="menuList">
+            <li><a class="nav__link" href="index.html">Home</a></li>
+            <li><a class="nav__link" href="#">Developers</a></li>
+            <li><a class="nav__link" href="#">Features</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+    <!-- Header -->
+
+    <main class="content">
+      <div class="Developer_1">
+        <div class="Heading">
+          <h1>Dr. Ashbel Owusu</h1>
+          <h3>Full-Stack Developer</h3>
+        </div>
+        <div class="Picture_1">
+        </div>
+        <div class="Text">
+          <h3>Hi, I am Dr. Ashbel Owusu Hinneh a Medical Laboratory Scientist and a Full-Stack Developer. I have strong expertise in Python, HTML and CSS. I am also a student enrolling in the ALX SE programe in the ninth month. Projects like HealthEase, NMSA and SalonPlus are examples of featured projects yet to be released.</h3>
+          <div class="header__btn">
+          <button class="btn"><a href="img/Martin_Owusu_HINNEH_CV.pdf" target="_blank"><h2>More</a></button>
+        </div>
+        </div>
+      </div>
+      <div class="Developer_2">
+        <div class="Heading">
+          <h1>Prince Osei</h1>
+          <h3>UI/UX Designer</h3>
+        </div>
+        <div class="Picture_2">
+        </div>
+        <div class="Text">
+          <h3>Hi, I am Prince, a Product Designer driven by a passion for creating digital experiences that are both intuitive and stunning, merging usabality with aestetics to deliver remarkable products that make a lasting impact beautiful and functional</h3>
+          <div class="header__btn">
+          <button class="btn"><a href="princ394.vzy.io"><h2>More</a></button>
+        </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER SECTION -->
+
+    <footer>
+      <ul class="socials">
+          <li>
+            <a href="https://web.facebook.com/ashbel.hinneh" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
+          </li>
+          <li>
+            <a href="https://x.com/AshbelHinn" target="_blank"><i class="ri-twitter-fill"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/ashbel-hinneh-83264a162/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+          </li>
+          <li>
+            <a href="https://github.com/AshTechs/ashtechs.github.io" target="_blank"><i class="ri-github-fill"></i></a>
+          </li>
+        </ul>
+        <div class="footer__bar">
+          Copyright © 2024 AshTechs | All rights reserved.
+        </div>
+    </footer>
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+  </body>
+</html>

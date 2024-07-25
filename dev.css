@@ -1,0 +1,126 @@
+.content {
+	background: #0d0d0d;
+	display: flex;
+}
+
+.Developer_1 {
+	width: 50%;
+	margin: 3px;
+}
+
+.Developer_1:hover {
+	transform: scale(1.01, 1.01);
+	transition: .8s;
+}
+
+.Developer_2 {
+	width: 50%;
+	margin: 3px;
+}
+
+.Developer_2:hover {
+	transform: scale(1.01, 1.01);
+	transition: .8s;
+}
+
+.Heading {
+	background-color: var(--tertiary-color);
+	border-style: solid;
+}
+
+.Heading h1 {
+	text-align: center;
+}
+
+.Heading h3 {
+	color: blue;
+	text-align: center;
+}
+
+.Picture_1 {
+	height: 20rem;
+	background-image: url('img/MLSD.jpg');
+	background-size: cover;
+	border-style: solid;
+}
+
+.Picture_2 {
+	height: 20rem;
+	background-image: url('img/Prin.jpg');
+	background-size: cover;
+	border-style: solid;
+}
+
+.Text h3 {
+	text-align: center;
+	color: var(--text-light);
+}
+
+.btn {
+	padding: 0.5rem 3rem;
+    background-color: var(--primary-color);
+    border-radius: 5rem;
+    transition: 0.3s;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.btn:hover {
+	background-color: var(--tertiary-color);
+	transition: .3s;
+	transform: translateY(-5px);
+}
+
+.btn h2 {
+	font-size: 25px;
+}
+
+.header__btn {
+	text-align: center;
+}
+
+@media (max-width:600px) {
+	nav {
+		height: 40px;
+	}
+
+	.nav__logo a img {
+		width:80px;
+		margin-left: -25px
+	}
+
+	.content {
+		display: block;
+	}
+	.Developer_1,
+	.Developer_2 {
+		width: auto;
+	}
+	.Heading h1 {
+		font-size: 1.9rem;
+	}
+	.Heading h3 {
+		font-size: 1.2rem;
+	}
+	.Text h3 {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width:320px) {
+	.Heading h1 {
+		font-size: 1rem;
+	}
+	.Heading h3 {
+		font-size: .7rem;
+	}
+	.Text h3 {
+		font-size: .5rem;
+	}
+	.btn {
+		padding: 0.2rem 1rem;
+	}
+	.btn h2 {
+		font-size: .6rem;
+	}
+}

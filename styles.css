@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/*======= GENERAL =======*/
+:root {
+  --primary-color: #00cfbf;
+  --secondary-color: #212429;
+  --tertiary-color: #ee01fd;
+  --text-light: #d1d5db;
+  --white: #ffff;
+  --max-width: 100%px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0d0d0d;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/*======= NAVIGATION =======*/
+
+
+
+/*======= HEADER =======*/
+
+.header__container {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-block: 5rem 2rem;
+  padding-inline: 1rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.header__image img {
+  width: 100%;
+  max-width: 500px;
+  margin-inline: auto;
+  display: flex;
+}
+
+.header__content {
+  overflow: hidden;
+  text-align: center;
+}
+
+.header__content .header__btn .btn h2 {
+  font-size: 1.2rem;
+}
+
+.header__content .header__btn {
+  text-align: center;
+}
+
+.header__content h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--white);
+  line-height: 5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.h1__span-1 {
+  font-size: 4rem;
+  color: var(--primary-color);
+}
+
+.h1__span-2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.header__content p1 {
+  margin-bottom: 2rem;
+  color: var(--text-light);
+  text-align: center;
+}
+
+.header__content .btn {
+  padding: 0.75rem 1.5rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 5rem;
+  transition: 0.3s;
+  cursor: pointer;
+  align-items: center;
+}
+
+.header__content .btn:hover {
+  color: var(--secondary-color);
+  background-color: var(--tertiary-color);
+}
+
+/*======== MAIN ========*/
+
+p2 {
+  text-align: center;
+  color: #0cfb;
+  background-color: #000;
+  font-size: 25px;
+  width: 70%;
+}
+
+.Clinical {
+  height: 200px;
+  width: 45%;
+  margin-left: 40px;
+  align-content: center;
+  background-image: url(img/Clin.jpg);
+  background-size: cover;
+  position: relative;
+  translate: translate(10px);
+  transition: .9s;
+  border-radius: 0 100px 100px 0px;
+}
+
+.Clinical:hover {
+  transform: translate(5px);
+  transition: .8s;
+}
+
+.Nursing {
+  height: 200px;
+  width: 45%;
+  margin-left: 50%;
+  margin-top: -80px;
+  align-content: center;
+  background-image: url(img/Nur.jpg);
+  background-size: cover;
+  position: relative;
+  border-radius: 100px 0 0 100px;
+}
+
+.Nursing:hover {
+  transform: translate(-5px);
+  transition: .8s;
+}
+
+.Laboratory {
+  height: 200px;
+  width: 45%;
+  margin-left: 50%;
+  margin-top: -80px;
+  align-content: center;
+  background-image: url(img/Lab.jpg);
+  background-size: cover;
+  position: relative;
+  border-radius: 100px 0 0 100px;
+}
+
+.Laboratory:hover {
+  transform: translate(-5px);
+  transition: .8s;
+}
+
+.Pharmaceutical {
+  height: 200px;
+  width: 45%;
+  margin-left: 40px;
+  margin-top: -80px;
+  align-content: center;
+  background-image: url(img/Pharm.jpg);
+  background-size: cover;
+  position: relative;
+  border-radius: 0 100px 100px 0px;
+}
+
+.Pharmaceutical:hover {
+  transform: translate(5px);
+  transition: .8s;
+}
+
+/*========== FOOTER ========*/
+
+footer {
+  background: #00cfbf;
+  margin-top: 2px;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  display: inline;
+  color: var(--tertiary-color);
+}
+
+.socials {
+  padding-block: 1rem 3rem;
+  display: flex;
+  gap: 2rem;
+  text-align: center;
+}
+
+.socials a {
+  font-size: 1.5rem;
+  align-items: center;
+  color: var(--secondary-color);
+  position: absolute;
+  margin-left: 45%;
+}
+
+.socials a:hover {
+  color: var(--tertiary-color);
+  transform: translateY(-5px);
+}
+
+.footer__bar {
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+
+nav{
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #2b2f31;
+  position: relative;
+  height: 70px;
+  z-index: 9;
+}
+
+nav ul{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+nav ul li{
+  list-style-type: none;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: var(--tertiary-color);
+}
+
+nav ul li a:hover {
+  color: var(--primary-color);
+}
+
+.nav__link::after {
+  content: '';
+  height: 3px;
+  width: 100%;
+  display: block;
+  background: var(--primary-color);
+  opacity: 0;
+  transition: all .2s;
+}
+
+.nav__link:hover::after {
+  opacity: 1;
+}
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: #fff;
+    font-size: 30px;
+}
+
+.nav__logo a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav__logo img {
+  display: flex;
+  max-width: 100px;
+}
+
+.nav__logo span {
+  color: #fff;
+  display: none;
+}
+
+@media (width > 768px) {
+  nav {
+    position: static;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .nav__header {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .nav__logo span {
+    display: flex;
+  }
+
+  .nav__menu__btn {
+    display: none;
+  }
+
+  .header__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding-block: 2rem;
+  }
+
+  .header__image {
+    grid-area: 1/2/2/3;
+  }
+
+  .header__content {
+    text-align: left;
+  }
+
+  .socials {
+    justify-content: flex-start;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width:600px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: var(--primary-color);
+        gap: 0;
+        overflow: hidden;
+    }
+    nav ul li{
+        padding: 20px;
+        padding-top: 0;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
+    .h1__span-1 {
+      font-size: 2rem;
+    }
+    .header__content h1{
+      font-size: 2rem;
+    }
+    .header__container {
+      padding-block: 1rem 0rem;
+      padding-inline: 1rem;
+      gap: 2rem;
+    }
+    h2 {
+      font-size: .8rem;
+    }
+}

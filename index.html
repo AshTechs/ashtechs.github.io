@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD SECTION-->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styling.css"/>
+    <title>HealthEase | Digital</title>
+  </head>
+
+  <!-- BODY SECTION -->
+
+  <body>
+
+    <!-- Navigation Bar -->
+    
+    <nav>
+        <div class="nav__logo">
+            <a href="#"><img src="img/Logo.png" alt="logo"/>
+            <span>Digital</span></a>
+        </div>
+        <ul id="menuList">
+            <li><a class="nav__link" href="index.html">Home</a></li>
+            <li><a class="nav__link" href="Dev.html">Developers</a></li>
+            <li><a class="nav__link" href="#">Features</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+    <!-- Header -->
+
+    <header class="header__container">
+      <div class="header__image">
+        <img src="img/Logo.png" alt="header" />
+      </div>
+      <div class="header__content">
+        <div class="header__btn">
+          <button class="btn"><a href="register.php"><h2>Sign Up</a></button>
+        </div>
+        <h1>
+          HealthEase<br /><span class="h1__span-1">Services</span>
+          <span class="h1__span-2">with our Agency</span>
+        </h1>
+        <p1>
+          From the comfort of you home recieve the best healthcare delivery. From medical consultation, Laboratory analysis, Pharmaceutical Services to Nursing services.
+        </p1>
+        <div class="header__btn">
+          <button class="btn">Learn More</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+
+    <p2>
+      <div class="Clinical"><h2>Medical<br/>Consultation</h2></div>
+      <div class="Laboratory"><h2>Laboratory<br/>Services</h2></div>
+      <div class="Pharmaceutical"><h2>Pharmaceutical<br/>Services</h2></div>
+      <div class="Nursing"><h2>Nursing<br/>Services</h2></div>
+    </p2>
+
+    <!-- FOOTER SECTION -->
+
+    <footer>
+      <ul class="socials">
+          <li>
+            <a href="https://web.facebook.com/ashbel.hinneh" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
+          </li>
+          <li>
+            <a href="https://x.com/AshbelHinn" target="_blank"><i class="ri-twitter-fill"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/ashbel-hinneh-83264a162/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+          </li>
+          <li>
+            <a href="https://github.com/AshTechs/ashtechs.github.io" target="_blank"><i class="ri-github-fill"></i></a>
+          </li>
+        </ul>
+        <div class="footer__bar">
+          Copyright © 2024 AshTechs | All rights reserved.
+        </div>
+    </footer>
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+  </body>
+</html>
